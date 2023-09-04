@@ -35,6 +35,11 @@ void TimeUtility::dispBenchmark(string arg)
     }
 }
 
+uint64_t TimeUtility::return_Benchmark()
+{
+    return time_measured_.count();
+}
+
 void TimeUtility:: startBenchmark(){
     this->start_ = chrono::high_resolution_clock::now().time_since_epoch();
 
